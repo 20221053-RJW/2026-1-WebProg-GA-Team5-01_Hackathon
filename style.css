@@ -1,0 +1,51 @@
+.board-container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead th {
+    background-color: #f9f9f9;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 12px 10px;
+}
+
+tbody td {
+    padding: 15px 10px;
+    font-size: 14px;
+}
+
+tbody tr:hover {
+    background-color: #fcfcfc;
+}
+
+.title {
+    text-align: center;
+    padding-left: 20px;
+}
+
+.view {
+    text-align: center;
+    width: 80px;
+}
+
+.date {
+    text-align: center;
+    width: 120px;
+}
+
+.delete {
+    text-align: center;
+    width: 120px;
+}
+
+.comment-count {
+    font-size: 13px;
+    margin-left: 4px;
+}

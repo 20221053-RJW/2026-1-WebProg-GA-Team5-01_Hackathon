@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>게시판 목록</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <button onclick="location.href='student.html'">학생</button>
+    <button onclick="location.href='teacher.html'">교수</button>
+
+  <div class="board-container">
+    <table>
+      <thead>
+        <tr>
+          <th class="title">글 제목</th>
+          <th class="view">조회수</th>
+          <th class="date">작성일</th>
+          <th class="delete">삭제</th> </tr>
+        </tr>
+      </thead>
+      
+      <tbody>
+        <tr>
+          <td class="title"><a href="enter.html">류지원</a></td>
+          <td class="view">36</td>
+          <td class="date">2026. 5. 6.</td>
+          <td class="delete"><button class="delete-btn">삭제</button></td>
+        </tr>
+        <tr>
+          <td class="title"><a href="enter.html">류지원</a></td>
+          <td class="view">10</td>
+          <td class="date">2026. 5. 5.</td>
+          <td class="delete"><button class="delete-btn">삭제</button></td>
+        </tr>
+        </tbody>
+    </table>
+  </div>
+
+</body>
+</html>
