@@ -1,0 +1,57 @@
+학생학생
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>학생 전용</title>
+    <script src="../app.js"></script>
+    <script src="script.js"></script>
+
+<body>
+    <button onclick="location.href='student.html'">학생</button>
+    <button onclick="location.href='teacher.html'">교수</button>
+    <title>학생 전용</title>
+    <form onsubmit="handleFormSubmit(event)" id="feedbackForm">
+        <div class="input">
+            <label for="input" class="form-label">피드백을 입력해주세요</label>
+        </div>
+
+        <textarea type="text" id="content" name="content" rows="4" cols="50">
+    </textarea>
+
+        <button type="submit" onclick="handleFormSubmit(event)" id="submit">제출</button>
+    </form>
+    <style>
+        .window-list {
+            list-style-type: none;
+            padding: 0;
+            width: 200px;
+            border: 1px solid #ccc;
+        }
+
+        .window-list li {
+            border-bottom: 1px solid #eee;
+        }
+
+        .window-list li a {
+            display: block;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .window-list li a:hover {
+            background-color: #f0f0f0;
+        }
+    </style>
+
+    <ul class="window-list">
+        <li><a href="#">첫번째 피드백</a></li>
+        <li><a href="#">두번째 피드백</a></li>
+        <li><a href="#">세번째 피드백</a></li>
+    </ul>
+    <button class="like-button" onclick="toggleLike()">
+        <span class="heart">❤️</span> <span class="like-text">공감</span>
+        <span class="like-count" id="likeCount">0</span>
+    </button>
+</body>
